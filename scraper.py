@@ -158,8 +158,15 @@ def find_businesses_without_website(district, query_term):
         print(f"📂 Veriler güvenle '{filename}' dosyasına kaydedildi.")
 
 if __name__ == "__main__":
-    # BURADAN SEMT VE KELİMEYİ İSTEDİĞİN GİBİ DEĞİŞTİREBİLİRSİN
-    hedef_semt = input("Lütfen hedef semti giriniz (örn: Beşiktaş): ").strip()
-    hedef_kelime = input("Lütfen hedef kelimeyi giriniz (örn: marangoz): ").strip()
-    
-    find_businesses_without_website(hedef_semt, hedef_kelime)
+    try:
+        # BURADAN SEMT VE KELİMEYİ İSTEDİĞİN GİBİ DEĞİŞTİREBİLİRSİN
+        hedef_semt = input("Lütfen hedef semti giriniz (örn: Beşiktaş): ").strip()
+        hedef_kelime = input("Lütfen hedef kelimeyi giriniz (örn: marangoz): ").strip()
+
+        find_businesses_without_website(hedef_semt, hedef_kelime)
+    except KeyboardInterrupt:
+        print("\nİşlem kullanıcı tarafından durduruldu.")
+        exit(0)
+    except Exception as e:
+        print(f"Beklenmeyen bir hata oluştu: {e}")
+        exit(1)
