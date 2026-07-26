@@ -1,4 +1,3 @@
-<img width="755" height="434" alt="image" src="https://github.com/user-attachments/assets/5a9536e5-2b76-4c36-9c73-8fc0e2570acd" />
 
 # maps-scraper
 
@@ -27,4 +26,4 @@ A Python tool using Playwright to scrape Google Maps, find local businesses with
 playwright install</code></pre>
 
 <p>Run the script:</p>
-<pre><code>python3 scrapermaps.py</code></pre>
+<pre><code>python3 scraper.py</code></pre>
