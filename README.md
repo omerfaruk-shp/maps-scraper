@@ -1,5 +1,7 @@
 <img width="755" height="434" alt="image" src="https://github.com/user-attachments/assets/5a9536e5-2b76-4c36-9c73-8fc0e2570acd" />
+
 # maps-scraper
+
 A Python tool using Playwright to scrape Google Maps, find local businesses without a website, and export leads instantly to Excel.
 
 <div align="center">
